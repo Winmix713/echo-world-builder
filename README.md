@@ -1,5 +1,5 @@
 
-# Extension Cards - React + Tailwind
+# Extension Cards - React + TypeScript + Tailwind
 
 A modern web application for creating and customizing extension cards with a powerful visual editor.
 
@@ -13,9 +13,10 @@ A modern web application for creating and customizing extension cards with a pow
 ## Tech Stack
 
 - **React** - UI library
+- **TypeScript** - Type safety
 - **Tailwind CSS** - Utility-first CSS framework
 - **HeroUI** - Component library
-- **React Router** - Navigation
+- **React Router v6** - Navigation
 - **Vite** - Build tool
 
 ## Getting Started
@@ -38,25 +39,32 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Build for development
+npm run build:dev
 ```
 
-### Development Scripts
+### Important Note
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run build:dev` - Build for development
-- `npm run preview` - Preview the production build
+The project requires a `build:dev` script in package.json. Please ensure that you have the following script in your package.json:
+
+```json
+"build:dev": "vite build --mode development"
+```
 
 ## Project Structure
 
 ```
 src/
-├── components/        # Reusable UI components
-├── context/           # React context providers
-├── pages/             # Page components
-│   ├── home/          # Home page
-│   └── editor/        # Editor page
-└── routes/            # Application routes
+├── components/     # Reusable UI components
+├── context/        # React context providers
+├── features/       # Feature-based modules
+├── hooks/          # Custom React hooks
+├── layouts/        # Layout components
+├── pages/          # Page components
+├── routes/         # Application routes
+├── types/          # TypeScript type definitions
+└── utils/          # Utility functions
 ```
 
 ## License

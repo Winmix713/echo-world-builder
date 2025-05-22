@@ -5,7 +5,11 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@heroui/re
 import { Icon } from '@iconify/react';
 import { CardManagerProvider } from './context/card-manager-context';
 import AppRoutes from './routes';
+import MainLayout from './layouts/MainLayout';
 
+/**
+ * Main application component that sets up the router and global providers.
+ */
 function App() {
   return (
     <CardManagerProvider>
