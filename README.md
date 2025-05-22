@@ -1,8 +1,64 @@
-# React + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. One top of the standard Vite setup, [tailwindcss](https://tailwindcss.com/) is installed and ready to be used in React components.
+# Extension Cards - React + Tailwind
 
-Additional references:
+A modern web application for creating and customizing extension cards with a powerful visual editor.
 
-- [Getting started with Vite](https://vitejs.dev/guide/)
-- [Tailwind documentation](https://tailwindcss.com/docs/installation)
+## Features
+
+- Interactive card management system
+- Visual card editor with real-time preview
+- Customizable card styles, animations, and effects
+- Responsive design for all device sizes
+
+## Tech Stack
+
+- **React** - UI library
+- **Tailwind CSS** - Utility-first CSS framework
+- **HeroUI** - Component library
+- **React Router** - Navigation
+- **Vite** - Build tool
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16+ and npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+### Development Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview the production build
+
+## Project Structure
+
+```
+src/
+├── components/        # Reusable UI components
+├── context/           # React context providers
+├── pages/             # Page components
+│   ├── home/          # Home page
+│   └── editor/        # Editor page
+└── routes/            # Application routes
+```
+
+## License
+
+This project is licensed under the MIT License.

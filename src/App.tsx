@@ -1,10 +1,10 @@
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './pages/home';
-import EditorPage from './pages/editor';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@heroui/react";
 import { Icon } from '@iconify/react';
 import { CardManagerProvider } from './context/card-manager-context';
+import AppRoutes from './routes';
 
 function App() {
   return (
@@ -30,10 +30,7 @@ function App() {
             </NavbarContent>
           </Navbar>
           
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/editor" component={EditorPage} />
-          </Switch>
+          <AppRoutes />
         </div>
       </Router>
     </CardManagerProvider>

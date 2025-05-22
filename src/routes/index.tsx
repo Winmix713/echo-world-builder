@@ -1,15 +1,18 @@
+
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/home';
 import EditorPage from '../pages/editor';
+import NotFoundPage from '../pages/not-found';
 
-const Routes = () => {
+const AppRoutes = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/editor" component={EditorPage} />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/editor" element={<EditorPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 };
 
-export default Routes;
+export default AppRoutes;
