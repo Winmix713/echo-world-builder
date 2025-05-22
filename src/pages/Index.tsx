@@ -19,8 +19,8 @@ const Index = () => {
             </Link>
           </Button>
           <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
-            <Link to="/">
-              View Example Cards
+            <Link to="/code-editor">
+              Open Code Editor
             </Link>
           </Button>
         </div>
